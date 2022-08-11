@@ -408,7 +408,7 @@ SOC_DEFAULT_IMAGE_FSTYPES_mxs = "uboot-mxsboot-sdcard wic.bmap wic.gz"
 # Do not update fstab file when using wic images
 WIC_CREATE_EXTRA_ARGS ?= "--no-fstab-update"
 
-OPTEE_BOOT_IMAGE         = "uTee"
+OPTEE_BOOT_IMAGE         ?= "uTee"
 OPTEE_BOOT_IMAGE_aarch64 = ""
 
 IMAGE_FSTYPES ?= "${SOC_DEFAULT_IMAGE_FSTYPES}"
